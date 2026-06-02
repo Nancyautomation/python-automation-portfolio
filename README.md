@@ -24,5 +24,7 @@ The script maps extensions to their respective target folders. For example:
 2. Open the script and modify the `WATCH_DIRECTORY` variable to point to the folder you want to clean up:
 ```python
    WATCH_DIRECTORY = Path(r"C:\Your\True\Path\Here")
-## 🎥 Demo Video
+
+## Demo Video
 https://github.com/Nancyautomation/file-organizer-python/blob/main/file-organizer-demo.mp4
+
