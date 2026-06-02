@@ -1,0 +1,57 @@
+import os
+from pathlib import Path
+import shutil
+
+# 1. DEFINE YOUR TARGET FOLDER
+# Path.home() automatically finds "C:\Users\YourUsername" on any computer!
+WATCH_DIRECTORY = Path.home() / "Documents" / "test_chaos"
+
+# 2. CUSTOMIZE YOUR CATEGORIES
+EXTENSION_MAP = {
+    "Readings_and_Docs": [".pdf", ".docx", ".txt", ".epub"],
+    "Images": [".png", ".jpg", ".jpeg", ".gif", ".svg"],
+    "Spreadsheets": [".csv", ".xlsx", ".ods"],
+    "Zip_Files": [".zip", ".tar", ".gz"],
+    "Installers": [".exe", ".msi"]
+}
+
+def organize_folder():
+    # Ensure the directory actually exists
+    if not WATCH_DIRECTORY.exists():
+        print(f"Error: The directory {WATCH_DIRECTORY} does not exist.")
+        return
+
+    print(f"Scanning: {WATCH_DIRECTORY}...")
+    files_moved = 0
+
+    # 3. LOOP THROUGH EVERY ITEM IN THE FOLDER
+    for item in WATCH_DIRECTORY.iterdir():
+        # Skip if it's a folder; we only want to move files
+        if item.is_dir():
+            continue
+            
+        # Get the file extension in lowercase
+        file_extension = item.suffix.lower()
+        
+        # 4. MATCH THE EXTENSION TO A CATEGORY
+        for folder_name, extensions in EXTENSION_MAP.items():
+            if file_extension in extensions:
+                # Define the target folder path
+                target_folder = WATCH_DIRECTORY / folder_name
+                
+                # 5. CREATE THE FOLDER IF IT DOESN'T EXIST YET
+                target_folder.mkdir(exist_ok=True)
+                
+                # Define the final destination path for the file
+                destination_path = target_folder / item.name
+                
+                # 6. MOVE THE FILE
+                print(f"Moving: {item.name} -> {folder_name}")
+                shutil.move(str(item), str(destination_path))
+                files_moved += 1
+                break  # Stop checking other categories once matched
+
+    print(f"\n🎉 Task Complete! Total files organized: {files_moved}")
+
+if __name__ == "__main__":
+    organize_folder()
