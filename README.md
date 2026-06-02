@@ -28,7 +28,7 @@ WATCH_DIRECTORY = Path(r"C:\Your\True\Path\Here")
 ```
 
 ## Demo Video
-<video src="https://github.com/Nancyautomation/file-organizer-python/raw/main/file-organizer-demo.mp4" controls width="100%"></video>
+[[video]] https://github.com/Nancyautomation/file-organizer-python/raw/main/file-organizer-demo.mp4
 
 
 
