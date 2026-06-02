@@ -28,7 +28,7 @@ WATCH_DIRECTORY = Path(r"C:\Your\True\Path\Here")
 ```
 
 ## Demo Video
-https://github.com/Nancyautomation/file-organizer-python/blob/main/file-organizer-demo.mp4
+https://github.com/Nancyautomation/file-organizer-python/raw/main/file-organizer-demo.mp4
 
 
 
