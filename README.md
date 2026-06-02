@@ -19,7 +19,7 @@ The script maps extensions to their respective target folders. For example:
 * `.png`, `.jpg` `/Images`
 * `.pdf`, `.docx`, `.txt` `/Readings_and_Docs`
 
-## ⚙️ Setup & Usage
+## Setup & Usage
 1. Clone this repository or download the `test.py` script.
 2. Open the script and modify the `WATCH_DIRECTORY` variable to point to the folder you want to clean up:
 ```python
