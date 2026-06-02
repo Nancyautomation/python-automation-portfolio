@@ -25,7 +25,7 @@ The script maps extensions to their respective target folders. For example:
 
 ```python
 WATCH_DIRECTORY = Path(r"C:\Your\True\Path\Here")
-
+```
 Demo Video
 https://github.com/Nancyautomation/file-organizer-python/blob/main/file-organizer-demo.mp4
 
