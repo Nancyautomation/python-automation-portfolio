@@ -51,7 +51,7 @@ def scrape_books():
 
     # 4. EXPORT TO A CSV FILE
     # This will save right in the folder where you run the script
-    output_file = Path(r"C:\Users\PMLS\Desktop\tracked_books.csv")
+    output_file = Path("tracked_books.csv")
     
     # Define the headers for our spreadsheet
     headers = ["Title", "Price", "Status"]
