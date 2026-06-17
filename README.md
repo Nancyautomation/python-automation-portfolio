@@ -4,6 +4,15 @@ Welcome to my automation portfolio! This repository features a collection of pro
 
 Each project demonstrates fundamental software engineering principles, secure API interactions, and portable file-handling mechanics.
 
+### 1. Human-Centric Desktop File Organizer
+- **Demo Video:** [Watch the File Organizer Demo Video](file-organizer-demo.mp4)
+
+### 2. Automated E-Commerce Data Tracker
+- **Demo Video:** [Watch the Web Scraper Demo Video](web-scraper-demo.mp4)
+
+### 3. Smart Daily Briefing & Alert System
+- **Demo Video:** [Watch the Daily Briefing Demo Video](daily-briefing-demo.mp4)
+
 ---
 
 ## Repository Structure
@@ -23,12 +32,5 @@ python-automation-toolkit
       ├── daily_briefing.py
       └── daily-briefing-demo.mp4
 
-### 1. Human-Centric Desktop File Organizer
-- **Demo Video:** [Watch the File Organizer Demo Video](file-organizer-demo.mp4)
 
-### 2. Automated E-Commerce Data Tracker
-- **Demo Video:** [Watch the Web Scraper Demo Video](web-scraper-demo.mp4)
-
-### 3. Smart Daily Briefing & Alert System
-- **Demo Video:** [Watch the Daily Briefing Demo Video](daily-briefing-demo.mp4)
 
