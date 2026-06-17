@@ -33,6 +33,8 @@ def send_discord_notification(message):
         print("Network timeout reached.")
 
 if __name__ == "__main__":
-    if "YOUR_SECRET" not in DISCORD_WEBHOOK_URL:
+    if "YOUR_SECRET" in DISCORD_WEBHOOK_URL:
+        print("Setup Required: Please replace the placeholder with your actual Discord Webhook URL on Line 5.")
+    else:
         daily_message = get_daily_quote()
         send_discord_notification(daily_message)
